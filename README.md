@@ -39,9 +39,12 @@ Vamos a crear un alias para que el comando sea el siguiente:
 
 Queremos un alias que liste todas los nombres y las urls de las organizaciones a las que el usuario pertenece:
 
-`gh api /user/memberships/orgs`
+`gh api /user/memberships/orgs | jq '.[].organization | .login, .url'`
+
 
 Vamos a crear un alias para que el comando sea el siguiente: 
 
 `gh org-list ULL-ESIT-DMSI-1920`
 
+
+# 4. Extensión en JS
