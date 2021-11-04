@@ -27,6 +27,21 @@ Vamos a crear un alias para que el comando sea el siguiente:
 `gh create-repo teresaprueba ULL-ESIT-DMSI-1920`
 
 # 2. Alias delete-repo
+Para eliminar un repositorio utilizamos el siguiente comando: 
+
+`gh api -X DELETE /repos/ULL-ESIT-DMSI-1920/pruebateresa`
+
+Vamos a crear un alias para que el comando sea el siguiente: 
+
+`gh delete-repo teresaprueba ULL-ESIT-DMSI-1920`
 
 # 3. Alias gh org-list
+
+Queremos un alias que liste todas los nombres y las urls de las organizaciones a las que el usuario pertenece:
+
+`gh api /user/memberships/orgs`
+
+Vamos a crear un alias para que el comando sea el siguiente: 
+
+`gh org-list ULL-ESIT-DMSI-1920`
 
