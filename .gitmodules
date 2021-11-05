@@ -1,0 +1,3 @@
+[submodule "gh-repo-rename-teresa"]
+	path = gh-repo-rename-teresa
+	url = git@github.com:ULL-ESIT-DMSI-1920/gh-repo-rename-teresa.git
