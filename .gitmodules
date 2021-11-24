@@ -4,3 +4,6 @@
 [submodule "gh-rename-teresa-Bonet"]
 	path = gh-rename-teresa-Bonet
 	url = https://github.com/ULL-ESIT-DMSI-1920/gh-rename-teresa-Bonet
+[submodule "gh-repo-rename-graph-teresa-bonet"]
+	path = gh-repo-rename-graph-teresa-bonet
+	url = https://github.com/TeresaUll/gh-repo-rename-graph-teresa-bonet
