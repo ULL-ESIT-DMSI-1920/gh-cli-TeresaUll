@@ -26,6 +26,11 @@ Vamos a crear un alias para que el comando sea el siguiente:
 
 `gh create-repo teresaprueba ULL-ESIT-DMSI-1920`
 
+Ejecutamos el siguiente código para que se cree el alias:
+
+`gh alias set create-repo 'repo create "$2"/"$1"' #gh create-repo [repositorio] [organización o propietario]`
+
+
 # 2. Alias delete-repo
 Para eliminar un repositorio utilizamos el siguiente comando: 
 
@@ -34,6 +39,11 @@ Para eliminar un repositorio utilizamos el siguiente comando:
 Vamos a crear un alias para que el comando sea el siguiente: 
 
 `gh delete-repo teresaprueba ULL-ESIT-DMSI-1920`
+
+Ejecutamos el siguiente código para que se cree el alias:
+
+`gh alias set delete-repo 'api -X DELETE /repos/"$2"/"$1"' #gh delete-repo [repositorio] [organización o propietario]`
+
 
 # 3. Alias gh org-list
 
@@ -45,6 +55,11 @@ Queremos un alias que liste todas los nombres y las urls de las organizaciones a
 Vamos a crear un alias para que el comando sea el siguiente: 
 
 `gh org-list ULL-ESIT-DMSI-1920`
+
+Ejecutamos el siguiente código para que se cree el alias:
+
+`gh alias set org-list "api --paginate /user/memberships/orgs --jq '.[].organization | .login, .url'"`
+
 
 
 # 4. Extensión en JS
