@@ -112,10 +112,13 @@ Una extensión de gh es  un comando de GitHub CLI que añade una nueva funcional
 
 Como ejemplo, desarrollaremos una extensión utilizando código JavaScript que nos permitirá cambiar el nombre de un repositorio usando el comando creado, le llamaremos gh-repo-rename.
 
-Empezamos creando la extensión con el siguiente comando:
+Empezamos creando la extensión con los siguiente comandos:
 
 ```
-gh extension create gh-repo-rename
- 
+gh extension create gh-teresa-repo-rename
+cd gh-teresa-repo-rename
+gh repo create --public ULL-ESIT-DMSI-1920 gh-teresa-repo-rename
+
 ```
+
 
