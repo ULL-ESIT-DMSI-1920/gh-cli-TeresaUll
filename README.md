@@ -122,3 +122,7 @@ gh repo create --public ULL-ESIT-DMSI-1920 gh-teresa-repo-rename
 ```
 
 
+Ahora tenemos un repositorio creado en la organización ULL-ESIT-DMSI-1920  desde el cual podremos implementar el código que cambiará el nombre a un repositorio.
+
+Necesitaremos crear un package json en este repositorio donde quedarán fijadas las dependencias.
+
