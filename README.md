@@ -65,10 +65,12 @@ La forma de utilizar el alias es la siguiente:
 
 gh delete-repo [repositorio] [organización o propietario]
 
-
+El flag -X indica que podrá utilizar el método delete para cambiar el repositorio.
 # 3. Alias gh org-list
 
 Queremos un alias que liste todas los nombres y las urls de las organizaciones a las que el usuario pertenece:
+Para ver todas las organizaciones a las que pertenece una persona podemos utilizar gh api /user/memberships/orgs, esto nos devuelve las organizaciones pero no es la información que realmente deseamos. Debemos utilizar una serie de comandos para obtener la organización y su url:
+
 
 `gh api /user/memberships/orgs | jq '.[].organization | .login, .url'`
 
@@ -98,3 +100,22 @@ gh org-list [organización o propietario]
 
 
 # 4. Extensión en JS
+Una extensión de gh es  un comando de GitHub CLI que añade una nueva funcionalidad al gh que no existe por defecto. Por convención, las extensiones han de llamarse gh-nombre-de-la-funcionalidad.
+
+ Gh extension tiene 5 comandos:
+
+* create: para crear una nueva gh extension
+* install: para instalar una gh extension desde un repositorio que ya existe
+* list: muestra la lista de todos los gh extension que se han instalado
+* remove: quita una gh extension ya instalada
+* upgrade: hace un upgrade de una gh extension ya instalada
+
+Como ejemplo, desarrollaremos una extensión utilizando código JavaScript que nos permitirá cambiar el nombre de un repositorio usando el comando creado, le llamaremos gh-repo-rename.
+
+Empezamos creando la extensión con el siguiente comando:
+
+```
+gh extension create gh-repo-rename
+ 
+```
+
