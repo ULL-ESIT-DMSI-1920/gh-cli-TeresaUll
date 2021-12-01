@@ -126,3 +126,4 @@ Ahora tenemos un repositorio creado en la organización ULL-ESIT-DMSI-1920  desd
 
 Necesitaremos crear un package json en este repositorio donde quedarán fijadas las dependencias.
 
+En el package.json tenemos información importante 
