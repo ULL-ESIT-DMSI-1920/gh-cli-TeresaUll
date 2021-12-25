@@ -126,4 +126,12 @@ Ahora tenemos un repositorio creado en la organización ULL-ESIT-DMSI-1920  desd
 
 Necesitaremos crear un package json en este repositorio donde quedarán fijadas las dependencias.
 
-En el package.json tenemos información importante 
+En el package.json tenemos información importante tal como la información de la aplicación, información del repositorio, información del autor y las dependecias.
+
+![image](pckjson.png)
+
+
+Debemos implementar todas las funcionalidades en el fichero gh-teresa-repo-rename.js. Se deben instanciar los módulos que vayamos a utilizar.
+
+
+![image](require.png)
