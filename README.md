@@ -131,7 +131,24 @@ En el package.json tenemos información importante tal como la información de l
 ![image](pckjson.png)
 
 
-Debemos implementar todas las funcionalidades en el fichero gh-teresa-repo-rename.js. Se deben instanciar los módulos que vayamos a utilizar.
+Debemos implementar todas las funcionalidades en el fichero gh-teresa-repo-rename.js. 
 
+En el código del fichero gh-teresa-repo-rename nos encontramos primero con los modulos que necesitaremos instanciados con el método require().
 
 ![image](require.png)
+
+El código que vemos en la siguiente imagen es necesario para saber si git y gh están instalados. 
+
+![image](ghgit.png)
+
+También debemos desarrollar las opciones que tendrá nuestro comando. 
+
+![image](opcions.png)
+
+Lo siguiente será guardar las variables que necesitamos para renombrar el repositorio, en caso de que no se guarden correctamente mandaremos la ayuda del comando. 
+
+![image](variables.png)
+
+Por último, si hemos cumplido todas las condiciones necesarias, se ejecutará la línea de comando en el shell que cambiará el nombre por el nombre nuevo especificado por el usuario. Además se mostrará un mensaje por pantalla con el nuevo nombre escogido, esto se realizará obteniendo la información del stdout. 
+
+![image](ejecuta.png)
